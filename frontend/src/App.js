@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import ProductListing from './pages/ProductListing';
 import ProductDetails from './pages/ProductDetails';
+import Footer from './components/Footer';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       
 
     </Routes>
+    <Footer/>
    </Router>
   );
 }
