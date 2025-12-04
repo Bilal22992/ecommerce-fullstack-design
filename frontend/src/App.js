@@ -7,12 +7,14 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import ProductListing from './pages/ProductListing';
 import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 
 function App() {
   return (
    <Router>
+    <Header/>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>

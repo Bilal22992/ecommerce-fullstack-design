@@ -19,7 +19,7 @@
     background-color:#eef3f8; 
      font-size: 14px
 }
-.center-menu{
+.footer-center-menu{
 
    
     display: grid;
@@ -29,7 +29,7 @@
 }
 
 
-.left-menu-logo{
+.footer-left-menu-logo{
     display: flex;
     flex-direction: column;
   gap: 20px;
@@ -48,28 +48,28 @@ ul li{
  gap: 20px;
   
 }
-.icon-menu ul{
+.footer-icon-menu ul{
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.title{
+.footer-title{
     margin-bottom: 20px;
 }
 
 
-.menu-item{
+.footer-menu-item{
     display: flex;
     gap: 10px;
     
 }
-.menu-item img{
+.footer-menu-item img{
     height: auto;
     width: 20px;
     object-fit: contain;
 }
-.menu-item p {
+.footer-menu-item p {
     margin: 0;
 }
 
@@ -80,12 +80,12 @@ ul li{
         padding: 40px 50px;
     }
 
-    .center-menu {
+    .footer-center-menu {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 
-    .right-menu-app {
+    .footer-right-menu-app {
         align-items: flex-start;
         padding-top: 30px;
     }
@@ -99,18 +99,18 @@ ul li{
         gap: 40px;
     }
 
-    .left-menu-logo,
-    .right-menu-app,
-    .center-menu {
+    .footer-left-menu-logo,
+    .footer-right-menu-app,
+    .footer-center-menu {
         align-items: center;
         padding: 0;
     }
 
-    .center-menu {
+    .footer-center-menu {
         grid-template-columns: 1fr;
     }
 
-    .icon-menu ul {
+    .footer-icon-menu ul {
         justify-content: center;
     }
 
@@ -132,7 +132,7 @@ ul li{
         font-size: 14px;
     }
 
-    .icon-menu ul {
+    .footer-icon-menu ul {
         gap: 10px;
     }
 }

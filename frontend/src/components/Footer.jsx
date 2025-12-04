@@ -15,11 +15,11 @@ function Footer()
 return(
     <div className="main">
         <div className="footer-menu">
-            <div className="left-menu-logo">
+            <div className="footer-left-menu-logo">
                 <div>
                 <div><img src={logo} alt="logo-image"/></div>
                 <div>Best Information about the company is just mentioned here</div>
-                <div className="icon-menu">
+                <div className="footer-icon-menu">
                     <ul>
                         <li><i className="fab fa-facebook-f"></i></li>
                         <li><i className="fab fa-twitter"></i></li>
@@ -30,10 +30,10 @@ return(
                 </div>
                 </div>
             </div>
-            <div className="center-menu"> 
+            <div className="footer-center-menu"> 
                 <div>
                 <ul>
-                    <li className="title"><strong>About</strong></li>
+                    <li className="footer-title"><strong>About</strong></li>
                     <li>About Us</li>
                     <li>Find Store</li>
                     <li>Categories</li>
@@ -42,7 +42,7 @@ return(
                 </div>
                 <div>
                 <ul>
-                   <li className="title"><strong>Partnership</strong></li>
+                   <li className="footer-title"><strong>Partnership</strong></li>
                     <li>About Us</li>
                     <li>Find Store</li>
                     <li>Categories</li>
@@ -51,7 +51,7 @@ return(
                 </div>
                 <div>
                 <ul>
-                   <li className="title"><strong>Information</strong></li>
+                   <li className="footer-title"><strong>Information</strong></li>
                     <li>Help Center</li>
                     <li>Money Refund</li>
                     <li>Shipping</li>
@@ -60,7 +60,7 @@ return(
                 </div>
                 <div>
                 <ul>
-                  <li className="title"><strong>For Users</strong></li>
+                  <li className="footer-title"><strong>For Users</strong></li>
                     <li>Login</li>
                     <li>Register</li>
                     <li>Settings</li>
@@ -68,10 +68,10 @@ return(
                 </ul>
                 </div>
             </div>
-            <div className="right-menu-app">
+            <div className="footer-right-menu-app">
                 <div>
                 <ul>
-                    <li className="title"><strong>Get App</strong></li>
+                    <li className="footer-title"><strong>Get App</strong></li>
                     <li><img src={apple} alt="apple store link"/></li>
                     <li><img src={google} alt="google store link"/></li>
                 </ul>
@@ -82,7 +82,7 @@ return(
             <div className="copyright-item">
                 <p>@Copyright 2025</p>
             </div>
-            <div className="menu-item">
+            <div className="footer-menu-item">
                 
                 <img src={us} alt="flag"/>
                 <p>English</p>

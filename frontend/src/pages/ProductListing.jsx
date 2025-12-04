@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 
 
 function ProductListing ()
@@ -7,7 +8,7 @@ function ProductListing ()
 
         
        
-        <h1>ProductListing</h1>
+        <Card/>
 
         </div>
 
