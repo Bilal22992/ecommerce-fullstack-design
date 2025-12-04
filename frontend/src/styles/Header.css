@@ -13,7 +13,7 @@
 .header-search{
     display: grid;
     grid-template-columns: 2.5fr 1fr 0.7fr;
-   gap: 7px;
+  
    overflow: hidden;
     border-radius: 8px;
     border: 1px solid #3b82f6;
@@ -25,6 +25,7 @@
     outline: none;
     font-size: 16px;
 }
+
 .header-search button{
     background-color: #1d4ed8;
     color: white;
