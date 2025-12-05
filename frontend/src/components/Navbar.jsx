@@ -40,7 +40,11 @@ function Navbar ()
                     <option>Spanish,ESP</option>
                   
                   </select></li>
-                    <li></li>
+                    <li><select>
+                        <option>Ship to Germany</option>
+                        <option>Ship to England</option>
+                    
+                    </select></li>
                 </ul>
             </div>
             

@@ -6,6 +6,9 @@
     box-sizing: border-box;
     width: 100%;
 align-items: center;
+border-top: 1px solid rgb(216, 209, 209);
+border-bottom: 1px solid rgb(216, 209, 209);
+height: 70px;
 }
 
 
@@ -33,6 +36,13 @@ align-items: center;
     color: #1c1c1c;
     
 }
+.navbar-left ul li select {
+    outline: none;
+    border: none;
+    width: auto;
+    
+    
+}
 .navbar-allcategory{
     display: flex;
     flex-direction: row;
@@ -47,4 +57,8 @@ align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
+}
+.navbar-right ul li select {
+    border: none;
+    outline: none;
 }

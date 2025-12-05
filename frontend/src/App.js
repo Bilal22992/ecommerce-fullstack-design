@@ -8,6 +8,7 @@ import ProductListing from './pages/ProductListing';
 import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Category from './components/Category';
 
 
 
@@ -16,6 +17,7 @@ function App() {
    <Router>
     <Header/>
     <Navbar/>
+    <Category/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/cart' element={<Cart/>}/>

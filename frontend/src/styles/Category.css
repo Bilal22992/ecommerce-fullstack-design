@@ -1,0 +1,168 @@
+.category-outerbox{
+    padding: 20px 40px;
+   
+
+} 
+.category-main
+{
+    display: grid;
+    grid-template-columns: 200px 1fr 280px;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 5px;
+}
+.category-listview{
+    margin-top: 0;
+
+}
+.category-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Banner-board.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+
+    
+    
+}
+.category-banner-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 80px;
+    border-radius: 6px;
+    gap: 10px;
+    
+}
+.category-banner-content h2 , .category-banner-content p {
+    margin: 0;
+}
+.category-banner-content p {
+    font-size: 20px;
+}
+.category-banner-content button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.category-banner-content button:hover {
+   color: white;
+   background-color: #0d6efd;
+    cursor: pointer;
+}
+.category-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.category-listview ul
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 8px;
+    flex-grow: 1;
+    
+  
+}
+.category-listview ul li
+{
+    padding: 8px 10px;
+    margin: 0;
+    border-radius: 5PX;
+  
+}
+.category-listview ul li:hover
+{
+    cursor: pointer;
+    background-color: rgb(214, 231, 248);
+    font-weight: 600;
+  
+}
+.category-right{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.category-login{
+    display: flex;
+background-color: #e3f0ff;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 6px;
+    
+}
+.category-login-message-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.category-login-message{
+    align-items: center;
+    gap: 0;
+}
+.category-login-message p{
+   margin: 0;
+}
+.category-login img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.category-discount{
+    background-color: #f38332;;
+    padding: 12px;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    flex-grow: 1;
+}
+.category-quote{
+    background-color: #55bdc3;;
+   padding: 12px;
+    height: auto;
+    min-height: 80px;
+    border-radius: 10px;
+    flex-grow: 1;
+    color: white;
+}
+
+.Category-join-button, .category-login-button {
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.Category-join-button {
+    background-color: #0d6efd; /* Bright Blue */
+    color: white;
+    border: none;
+}
+
+.category-login-button {
+    background-color: white;
+    color: #0d6efd;
+    border: 1px solid #ddd;
+}
+.category-login-button:hover {
+    background-color: #f8f9fa;
+}
