@@ -9,6 +9,7 @@ import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Category from './components/Category';
+import Deals from './components/Deals';
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <Header/>
     <Navbar/>
     <Category/>
+    <Deals/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/cart' element={<Cart/>}/>

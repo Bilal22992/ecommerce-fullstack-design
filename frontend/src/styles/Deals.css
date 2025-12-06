@@ -1,0 +1,89 @@
+
+ .deals-outerbox{
+padding: 20px 40px;
+} 
+
+.deals-main {
+
+    display: grid;
+    grid-template-columns:  1fr 4fr;
+    
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 207, 207);
+}
+
+.deals-timer {
+    border-right: 1px solid rgb(214, 207, 207);
+    padding: 10px;
+    
+}
+.deals-timer p {
+    margin: 0;
+}
+.deals-timer ul {
+display: flex;
+flex-direction: row;
+gap:5px;
+align-items: center;
+justify-content: start;
+}
+.deals-timer ul li {
+    background-color: rgb(99, 96, 96);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    height: 25px;
+    width: 20px;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+    
+}
+.deals-timer ul li p {
+    margin: 0;
+    font-size: 12px;
+}
+.deals-items{
+    width: 100%;
+}
+.deals-items ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    
+   
+}
+.deals-items ul li {
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(214, 207, 207);
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    gap: 15px;
+}
+.deals-items ul li p {
+    margin: 0;
+}
+.deals-items ul li:last-child {
+    
+    border-right: none;
+    
+}
+.deals-items ul li img {
+    height: 100px;
+    width: 100px;
+}
+.deals-percentage{
+    background-color: rgb(236, 187, 187);
+    color: red;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
