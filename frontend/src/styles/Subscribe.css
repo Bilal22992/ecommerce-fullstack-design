@@ -1,0 +1,43 @@
+
+.subscribe-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef3f8;
+    padding: 40px;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.subscribe-main h3{
+    margin: 0;
+}
+.subscribe-main p{
+    margin: 0;
+}
+.subscribe-button-section
+{
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+
+}
+.subscribe-button-section input {
+
+    border-radius: 3px;
+    border: none;
+
+}
+
+
+.subscribe-button-section button {
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
