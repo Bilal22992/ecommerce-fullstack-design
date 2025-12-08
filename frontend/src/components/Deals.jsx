@@ -4,11 +4,15 @@ import smartWatch from "../images/smart-watch.png";
 import camera from "../images/camera.png";
 import canonCamera from "../images/canon-camera.png";
 import headphones from "../images/headphones.png";
+import { useState,useEffect } from "react";
 
 
 
 function Deals ()
 {
+const [mongoname,setmongoname]=useState("");
+ useEffect(()=>{fetch("http://localhost:5000/api/samples").then(res=>res.json()).then(response=>setmongoname(response[0].name))},[]);
+
     return(
          <div className=" deals-outerbox">
         <div className="deals-main">
@@ -40,7 +44,7 @@ function Deals ()
                 <ul>
                     <li>
                         <img src={smartWatch} alt="smartWatch"/>
-                        <p>Smart Watches</p>
+                        <p>{mongoname}</p>
                         <p  className="deals-percentage">-25%</p>
                     </li>
                     <li>
