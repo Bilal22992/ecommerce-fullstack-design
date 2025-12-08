@@ -7,7 +7,7 @@ const app = express();
 const port = 5000;
 app.use(cors());
 // NOTE: Using the hardcoded URI for simplicity here, but using .env is best practice!
-const uri = "mongodb+srv://moon:Moon%40302%23@cluster0.m4ccdtb.mongodb.net/ecommerce?appName=Cluster0";
+
 
 // --- 1. MODEL DEFINITION ---
 const sampleSchema = new mongoose.Schema({
