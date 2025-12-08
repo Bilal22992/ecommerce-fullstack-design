@@ -53,7 +53,7 @@ function Home ()
     <Deals/>
 <CategoryProducts title="Home and outdoor"items={homeData} bgImage={bgimage1}/>
 <CategoryProducts title="Consumer electronics and gadgets"items={techData} bgImage={bgimage2}/>
-<Recomended/>
+<Recomended items={homeData}/>
 <Subscribe/>
         </div>
         

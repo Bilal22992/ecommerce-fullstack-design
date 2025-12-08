@@ -5,16 +5,21 @@ function Recomended (props)
     return (
         <div className="recomended-outer-box">
             <div className="recomended-main">
-                <div className="recomended-card">
+                {
+                    props.items.map((item,index) =>
+
+                <div key={index} className="recomended-card">
                     <div className="recomended-card-image">
-                         <img src={chair} alt="chair"/>
+                         <img src={item.image} alt="chair"/>
                     </div>
                    
                     <div className="recomended-card-details">
-                <h3>$10.30</h3>
-                <p>T-shirts with multicolor men</p>
+                <h3>{item.price}</h3>
+                <p>{item.itemname}</p>
                 </div>
                 </div>
+                    )
+}
                 
 
             </div>
