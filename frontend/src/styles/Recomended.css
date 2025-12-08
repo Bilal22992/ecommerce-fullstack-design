@@ -1,0 +1,44 @@
+
+.recomended-outer-box{
+    padding: 20px 40px;
+   
+}
+.recomended-main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.recomended-card{
+    border: 1px solid rgb(214, 207, 207);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 300px;
+    
+    
+}
+.recomended-card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.recomended-card-image img {
+    width: 100px;
+    height: 200px;
+    object-fit: contain;
+}
+.recomended-card-details{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.recomended-card-details p , .recomended-card-details h3 {
+    margin: 0;
+}
+.recomended-card-details p
+{
+    color: #8b96a5;
+}

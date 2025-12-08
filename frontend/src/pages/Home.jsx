@@ -18,6 +18,7 @@ import CategoryProducts from "../components/CategoryProducts";
 import bgimage1 from "../images/bg-1.png";
 import bgimage2 from "../images/bg-2.png";
 import Subscribe from "../components/Subscribe";
+import Recomended from "../components/Recomended";
 
 function Home ()
 {
@@ -52,6 +53,7 @@ function Home ()
     <Deals/>
 <CategoryProducts title="Home and outdoor"items={homeData} bgImage={bgimage1}/>
 <CategoryProducts title="Consumer electronics and gadgets"items={techData} bgImage={bgimage2}/>
+<Recomended/>
 <Subscribe/>
         </div>
         
