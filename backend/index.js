@@ -45,7 +45,7 @@ async function startServer() {
         });
 
     } catch (error) {
-        console.error('❌ MongoDB Connection Failed. Server not started successfully.');
+        console.error('❌ MongoDB Connection Failed. Server not started.');
         console.error('Error details:', error.message);
         process.exit(1); 
     }
