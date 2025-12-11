@@ -1,7 +1,9 @@
 import "../styles/CategoryProducts.css";
 function CategoryProducts (props)
-{
+{ const filteredItems = props.items.filter(item => props.category === item.category);
     return (
+
+        
         <div className="category-products-outerbox">
         <div className="category-products-main"> 
             <div style={{backgroundImage:`url(${props.bgImage})`}} className="category-products-image" >
@@ -11,19 +13,21 @@ function CategoryProducts (props)
             </div>
 
              <div  className="category-products-items">
-               { props.items.map((item,index) =>
+               { filteredItems.map((item,index) =>
                 
+               
                     
                       
                 <div className="category-products-product" key={index}>
                     <div className="category-product-itemdetail">
-                    <p className="category-product-itemdetail-name">{item.itemname}</p>
+                    <p className="category-product-itemdetail-name">{item.name}</p>
                     <p>From</p>
                     <p>${item.price}</p>
                     </div>
-                    <img src={item.image} alt={item.name}/>
+                    <img src={item.ImageBase64} alt={item.name}/>
                 </div>
-               
+                    
+                   
                     )
                      
             }

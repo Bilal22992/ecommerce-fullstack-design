@@ -1,21 +1,21 @@
 import "../styles/Recomended.css";
-import chair from "../images/chair.png";
+
 function Recomended (props)
-{
+{ const filteredItems= props.items.filter(item=>props.ratings===item.ratings)
     return (
         <div className="recomended-outer-box">
             <div className="recomended-main">
                 {
-                    props.items.map((item,index) =>
+                    filteredItems.map((item,index) =>
 
                 <div key={index} className="recomended-card">
                     <div className="recomended-card-image">
-                         <img src={item.image} alt="chair"/>
+                         <img src={item.ImageBase64} alt="chair"/>
                     </div>
                    
                     <div className="recomended-card-details">
-                <h3>{item.price}</h3>
-                <p>{item.itemname}</p>
+                <h3>${item.price}</h3>
+                <p>{item.name}</p>
                 </div>
                 </div>
                     )

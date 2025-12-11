@@ -19,30 +19,35 @@ import bgimage1 from "../images/bg-1.png";
 import bgimage2 from "../images/bg-2.png";
 import Subscribe from "../components/Subscribe";
 import Recomended from "../components/Recomended";
+import { useEffect, useState } from "react";
 
 function Home ()
 {
+  const [homeData,sethomeData]=useState([]);
+  
+  useEffect(()=>{
+    fetch("http://localhost:5000/api/test").then(res=>res.json()).then(response=>sethomeData(response))},[]);
 
-    const homeData = [
-    { itemname: "Soft chairs", price: 19, image:chair },
-    { itemname: "Sofa & chair", price: 19, image: foldingchair },
-    { itemname: "Kitchen dishes", price: 19, image: pot },
-    { itemname: "Smart watches", price: 19, image: plant },
-    { itemname: "Kitchen mixer", price: 100, image: matress },
-    { itemname: "Blenders", price: 39, image: blender },
-    { itemname: "Home appliance", price: 19, image: lamp },
-    { itemname: "Coffee maker", price: 10, image: juicer },
-  ];
-  const techData = [
-    { itemname: "Soft chairs", price: 19, image:chair },
-    { itemname: "Sofa & chair", price: 19, image: foldingchair },
-    { itemname: "Kitchen dishes", price: 19, image: pot },
-    { itemname: "Smart watches", price: 19, image: camera },
-    { itemname: "Kitchen mixer", price: 100, image: matress },
-    { itemname: "Blenders", price: 39, image: blender },
-    { itemname: "Home appliance", price: 19, image: lamp },
-    { itemname: "Coffee maker", price: 10, image: juicer },
-  ];
+  //    const homeData = [
+  //   { itemname: "Soft chairs", price: 19, image:chair },
+  //   { itemname: "Sofa & chair", price: 19, image: foldingchair },
+  //   { itemname: "Kitchen dishes", price: 19, image: pot },
+  //   { itemname: "Smart watches", price: 19, image: plant },
+  //   { itemname: "Kitchen mixer", price: 100, image: matress },
+  //   { itemname: "Blenders", price: 39, image: blender },
+  //   { itemname: "Home appliance", price: 19, image: lamp },
+  //   { itemname: "Coffee maker", price: 10, image: juicer },
+  // ];
+  // const techData = [
+  //   { itemname: "Soft chairs", price: 19, image:chair },
+  //   { itemname: "Sofa & chair", price: 19, image: foldingchair },
+  //   { itemname: "Kitchen dishes", price: 19, image: pot },
+  //   { itemname: "Smart watches", price: 19, image: camera },
+  //   { itemname: "Kitchen mixer", price: 100, image: matress },
+  //   { itemname: "Blenders", price: 39, image: blender },
+  //   { itemname: "Home appliance", price: 19, image: lamp },
+  //   { itemname: "Coffee maker", price: 10, image: juicer },
+  // ];
     return(
         <div>
 
@@ -51,9 +56,9 @@ function Home ()
     <Navbar/>
     <Category/>
     <Deals/>
-<CategoryProducts title="Home and outdoor"items={homeData} bgImage={bgimage1}/>
-<CategoryProducts title="Consumer electronics and gadgets"items={techData} bgImage={bgimage2}/>
-<Recomended items={homeData}/>
+<CategoryProducts title="Home and outdoor"items={homeData} bgImage={bgimage1} category="Interior"/>
+<CategoryProducts title="Consumer electronics and gadgets"items={homeData} bgImage={bgimage2} category="Tech"/>
+<Recomended items={homeData} ratings ={5}/>
 <Subscribe/>
         </div>
         
