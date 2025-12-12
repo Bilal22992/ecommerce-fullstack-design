@@ -1,11 +1,12 @@
 
-import "../styles/Category.css"
+import "../styles/Category.css";
+import {Link} from "react-router-dom"
 
 import profile from "../images/profile-sample.png";
 
 
 function Category ()
-{
+{ const list=["tech"]
     return(
         <div className="category-outerbox">
         <div className="category-main">
@@ -14,7 +15,7 @@ function Category ()
                     <li>Automobiles</li>
                     <li>Clothes and wear</li>
                     <li>Home Interiors</li>
-                    <li>Computer and tech</li>
+                    <li><Link key={list} to={`ProductListing/${list}`}>Computer and tech</Link></li>
                     <li>Tools,equipments</li>
                     <li>Sports and outdoor</li>
                     <li>Animal and pets</li>

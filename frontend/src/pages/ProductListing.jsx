@@ -1,4 +1,7 @@
 import Card from "../components/Card";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Selector from "../components/Selector";
 
 
 function ProductListing ()
@@ -6,9 +9,12 @@ function ProductListing ()
     return(
         <div>
 
-        
+        <Header/>
+        <Navbar/>
+
        
-        <Card/>
+        <Selector/>
+        
 
         </div>
 
