@@ -6,7 +6,7 @@ import profile from "../images/profile-sample.png";
 
 
 function Category ()
-{ const list=["tech"]
+{ const list=["tech","interior"]
     return(
         <div className="category-outerbox">
         <div className="category-main">
@@ -14,7 +14,7 @@ function Category ()
                 <ul>
                     <li>Automobiles</li>
                     <li>Clothes and wear</li>
-                    <li>Home Interiors</li>
+                    <li><Link key={list} to={`ProductListing/${list}`}>Home Interiors</Link></li>
                     <li><Link key={list} to={`ProductListing/${list}`}>Computer and tech</Link></li>
                     <li>Tools,equipments</li>
                     <li>Sports and outdoor</li>
