@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+
 import Cart from './pages/Cart';
 import Home from './pages/Home';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/productListing/:tech' element={<ProductListing/>}/>
       <Route path='/productListing/:interior' element={<ProductListing/>}/>
-      <Route path='/productDetails' element={<ProductDetails/>}/>
+      <Route path='/productDetails/:id' element={<ProductDetails/>}/>
       
 
     </Routes>

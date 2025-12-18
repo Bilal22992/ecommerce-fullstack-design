@@ -2,16 +2,8 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Category from "../components/Category";
 import Deals from "../components/Deals";
-import camera from "../images/camera.png";
-import chair from "../images/chair.png";
 
-import blender from "../images/blender.png";
-import foldingchair from "../images/folding-chair.png";
-import juicer from "../images/juicer.png";
-import matress from "../images/matress.png";
-import plant from "../images/plant.png";
-import pot from "../images/pot.png";
-import lamp from "../images/lamp.png";
+
 
 
 import CategoryProducts from "../components/CategoryProducts";

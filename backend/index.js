@@ -44,7 +44,7 @@ app.get('/api/test', async (req, res) => {
         
         // --- FIX APPLIED HERE ---
         // Log the entire array to see the retrieved data in your terminal
-        console.log("Retrieved data:", samples); 
+        // console.log("Retrieved data:", samples); 
 
         
         res.json(samples);
@@ -52,6 +52,16 @@ app.get('/api/test', async (req, res) => {
     } catch (error) {
         console.error('Error retrieving data:', error.message);
         res.status(500).json({ message: 'Failed to fetch sample data' });
+    }
+});
+app.get("/api/test/:id", async (req, res) => {
+    try {const id =req.params.id;
+        const item = await Sample.findById(id); // 'YourModel' is your MongoDB model
+        if (!item) return res.status(404).send("Item not found");
+        res.json(item);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send("Server Error");
     }
 });
 
